@@ -1,0 +1,16 @@
+title: "Backyard Barns"
+description: "A platform for hobby horse enthusiasts"
+baseurl: "/backyard-barns" # the subpath of your site
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+theme: minima
+
+# Defaults for Markdown files
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Backyard Barns"
+      
+markdown: kramdown

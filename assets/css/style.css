@@ -5,20 +5,20 @@ body {
     padding: 0;
 }
 
+header {
+    background-color: rgba(143, 188, 143, 0.8); /* Semi-transparent light green */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
 .horse-head {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 100px; /* Adjust size as necessary */
-    opacity: 0.5; /* Ensure this is here */
-    -webkit-transform: translateY(-50%); /* Vendor prefix for Safari */
-    -webkit-opacity: 0.5; /* Sometimes helpful for older iOS versions */
-}
-
-/* Ensure the header is not collapsing due to absolute positioning of children */
-header {
-    position: relative;
-    min-height: 120px; /* Adjust based on your design */
+    opacity: 0.5;
+    height: 100px; /* Adjust size as necessary */
 }
 
 .horse-head.left {
@@ -60,12 +60,4 @@ h1, h2 {
     margin: 20px 0;
     width: 100%;
     max-width: 600px;
-}
-
-@media (max-width: 768px) {
-    .horse-head {
-        width: 50px; /* Smaller size on smaller screens */
-        left: 5px; /* Adjust as necessary */
-        right: 5px; /* Adjust as necessary */
-    }
 }

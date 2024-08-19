@@ -1,20 +1,38 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Cursive', Arial, sans-serif; /* Generic fallback to cursive style */
     line-height: 1.6;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #8FBC8F;
+    background-color: rgba(143, 188, 143, 0.8); /* Semi-transparent light green */
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
+    position: relative;
+}
+
+.horse-head {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.5;
+    height: 100px; /* Adjust size as necessary */
+}
+
+.horse-head.left {
+    left: 10px;
+}
+
+.horse-head.right {
+    right: 10px;
 }
 
 header nav ul {
     list-style: none;
     padding: 0;
+    position: relative; /* To ensure it stays in the flow */
 }
 
 header nav ul li {
@@ -33,6 +51,7 @@ header nav ul li a {
 }
 
 h1, h2 {
+    font-family: 'Dancing Script', cursive; /* Example of a script-like font */
     color: #8FBC8F;
 }
 
